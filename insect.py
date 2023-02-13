@@ -1,22 +1,12 @@
-import insect_class as ic
+import insect_class as I 
+
+mosquito = I.insect("mosquito",2,4)
+housefly = I.insect("housefly",2,4)
+
+mosquito.get_fly()
+housefly.get_fly()
 
 
-def main():
-    my_insect = ic.insect()
+print (f"the {mosquito.get_name()} can fly to {mosquito.get_fly()} miles")
 
-    print("This insect can fly: ", my_insect.get_fly())
-
-    #insect fly
-    print('This insect is going to fly ten times: ')
-    for count in range(10):
-        my_insect.fly()
-
-        # Display the side of the coin that is facing up.
-        print('This insect flew:', my_insect.get_fly())
-
-
-
-
-
-
-main()
+print (f"the {housefly.get_name()} can fly to {housefly.get_fly()} miles")
